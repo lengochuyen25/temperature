@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Temperature = function (C) {
+        this.C = C;
+        this.getFahrenheit = function () {
+            this.Fahrenheit = C * 1.8 + 32;
+            return this.Fahrenheit;
+        }
+        this.getKelvin = function () {
+            this.Kelvin = C + 273.15;
+            return this.Kelvin;
+        }
+    }
+    let temperature = new Temperature(25);
+    alert(temperature.getFahrenheit());
+    alert(temperature.getKelvin());
+</script>
+</body>
+</html>
